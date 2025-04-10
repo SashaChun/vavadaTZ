@@ -1,0 +1,465 @@
+
+:root {
+  --red: #ff0043;
+  --dark: #1a1c26;
+  --purple: #6c3df8;
+  --yellow: #ffe600;
+  --green: #00e676;
+  --blue: #00cfff;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--dark); /* Темний фон */
+  color: var(--white); /* Білий текст */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(26, 28, 38, 0.9); /* Темний фон для хедера */
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* Логотип */
+.header__logo img {
+  max-height: 40px;
+}
+
+/* Навігація */
+.header__nav a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header__nav a:hover {
+  color: var(--red);
+}
+
+/* Авторизація */
+.header__auth {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Кнопки */
+.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+/* Стилі для кнопки входу */
+.btn--login {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn--login:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+
+/* Стилі для кнопки реєстрації */
+.btn--register {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.btn--register:hover {
+  filter: brightness(1.1);
+}
+
+/* Кнопка бонусу */
+.btn--bonus {
+  margin-top: 1rem;
+  background-color: var(--yellow);
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.btn--bonus:hover {
+  filter: brightness(1.1);
+}
+
+/* Контент */
+.content {
+  text-align: center;
+}
+.content__title {
+  font-size: 4rem;
+  font-weight: 900;
+  background-image: linear-gradient(90deg, var(--purple), var(--red), var(--yellow));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 5px rgba(255, 230, 0, 0.4),
+    0 0 10px rgba(255, 0, 67, 0.5),
+    0 0 15px rgba(108, 61, 248, 0.4);
+  animation: title-glow 3s infinite alternate;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Анімація для мерехтіння тексту заголовка */
+@keyframes title-glow {
+  from {
+    text-shadow: 0 0 5px rgba(255, 230, 0, 0.4),
+    0 0 10px rgba(255, 0, 67, 0.5),
+    0 0 15px rgba(108, 61, 248, 0.4);
+  }
+  to {
+    text-shadow: 0 0 10px rgba(255, 230, 0, 0.8),
+    0 0 20px rgba(255, 0, 67, 0.9),
+    0 0 30px rgba(108, 61, 248, 0.7);
+  }
+}
+.content__text {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #888;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.content__text2 {
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #888;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.content__text::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 80px;
+  height: 3px;
+  background-color: #6c3df8;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+/* Банер */
+.banner {
+  width: 100%;
+  height: 300px;
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url('../img/Patro1-1.webp') center / cover no-repeat;
+  position: relative;
+}
+
+/* Оверлей для банера */
+.banner__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-shadow: 1px 1px 5px #000;
+}
+
+.banner__text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--yellow);
+  text-shadow:
+    0 0 10px rgba(255, 230, 0, 0.8),
+    0 0 20px rgba(255, 0, 67, 0.9);
+  margin-bottom: 1rem;
+  animation: glow-text 2s infinite alternate;
+
+}
+.btn-bonus {
+  padding: 0.8rem 2.5rem;
+  background: linear-gradient(45deg, var(--yellow), var(--red), var(--purple));
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  box-shadow:
+    0 0 10px var(--yellow),
+    0 0 20px var(--red),
+    0 0 40px var(--purple);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.btn-bonus:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow:
+    0 0 15px var(--yellow),
+    0 0 30px var(--red),
+    0 0 60px var(--purple);
+}
+
+.btn-bonus::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255,255,255,0.3), transparent, rgba(255,255,255,0.3));
+  transform: translateX(-100%);
+  transition: transform 0.7s ease-in-out;
+}
+
+.btn-bonus:hover::before {
+  transform: translateX(100%);
+}
+
+/* Футер */
+.footer {
+  padding: 2rem;
+  background-color: #111;
+  text-align: center;
+}
+
+.footer__nav {
+  margin-bottom: 1rem;
+}
+
+.footer__nav a {
+  margin: 0 1rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer__nav a:hover {
+  color: var(--red);
+}
+
+.footer__payments img {
+  height: 30px;
+  margin: 0 0.5rem;
+}
+
+.footer__copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .banner {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner {
+    height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner {
+    height: 150px;
+  }
+
+  .btn--bonus {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+}
+
+/* Games Section */
+.games {
+  padding: 2rem;
+}
+.game-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.item {
+  width: 200px;
+  height: 230px;
+  position: relative; /* для позиціонування кнопки всередині */
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+  .item {
+    width: 150px; /* Менша ширина карток на менших екранах */
+    height: 180px;
+  }
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item .btn {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+}
+
+.item:hover .btn {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.9); /* Зміна фону при ховері */
+}
+
+/* Інші стилі для кнопки, якщо необхідно */
+.item .btn:hover {
+  background-color: rgba(1,1,1 ,0.9) /* Трохи змінюється колір фону при ховері */
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Search Section */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search {
+  padding: 0.5rem;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn--search {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn--search:hover {
+  background-color: #45a049;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover {
+  background-color: #555;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.game-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.play-btn {
+  width: 90%;
+  position: absolute;
+  border-radius: 5px;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  opacity: 0; /* приховуємо по замовчуванню */
+  pointer-events: none; /* кнопка не реагує на кліки до моменту появи */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.item:hover .play-btn {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+}
+
+
+.play-btn:hover {
+  background-color: var(--green);
+}
