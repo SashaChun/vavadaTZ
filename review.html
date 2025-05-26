@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vavada Casino - Review</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/rewiwe.css" />
+</head>
+<body>
+<header class="header">
+  <div class="header__logo">
+    <img src="./img/vavada.webp" alt="Vavada logo" />
+  </div>
+  <nav class="header__nav">
+    <a href="index.html">Home</a>
+    <a href="review.html">Review</a>
+    <a href="bonus.html">Bonus</a>
+   </nav>
+  <div class="header__auth">
+    <a class="btn btn--login" href="#">Login</a>
+    <a class="btn btn--register" href="#">Registration</a>
+  </div>
+</header>
+
+<main class="content">
+  <h1 class="content__title">Lavada Casino Review</h1>
+  <p class="content__text">Welcome to our comprehensive review of Vavada Casino. Here we'll explore all aspects of this popular online casino, from game selection to customer service and payment options.</p>
+
+  <section class="banner">
+    <div class="banner__overlay">
+      <h2 class="banner__text">Expert Review</h2>
+      <a class="btn btn-bonus" href="bonus.html">Get bonus</a>
+    </div>
+  </section>
+
+  <section style="padding: 2rem; max-width: 800px; margin: 0 auto; text-align: left;">
+    <h2 style="color: var(--purple); margin-bottom: 1rem;">About Vavada Casino</h2>
+    <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">
+      Vavada Casino was established in 2017 and has quickly become one of the leading online gambling platforms. The casino offers a wide range of games from top providers, generous bonuses, and excellent customer support.
+    </p>
+
+    <h2 style="color: var(--purple); margin-bottom: 1rem;">Game Selection</h2>
+    <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">
+      Vavada Casino offers an impressive collection of games, including slots, table games, live dealer games, and more. The casino partners with leading game providers such as Pragmatic Play, NetEnt, Microgaming, and many others to ensure a diverse and high-quality gaming experience.
+    </p>
+
+    <h2 style="color: var(--purple); margin-bottom: 1rem;">Bonuses and Promotions</h2>
+    <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">
+      New players at Vavada Casino can enjoy a generous welcome bonus package. The casino also offers regular promotions, cashback offers, and a VIP program for loyal players. Check out our <a href="bonus.html" style="color: var(--red); text-decoration: none;">Bonus page</a> for more details.
+    </p>
+
+    <h2 style="color: var(--purple); margin-bottom: 1rem;">Payment Methods</h2>
+    <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">
+      Vavada Casino supports a variety of payment methods, including credit/debit cards, e-wallets, bank transfers, and cryptocurrencies. Deposits are processed instantly, while withdrawals are typically processed within 24 hours.
+    </p>
+
+    <h2 style="color: var(--purple); margin-bottom: 1rem;">Customer Support</h2>
+    <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">
+      The casino offers 24/7 customer support via live chat, email, and phone. The support team is professional, friendly, and responsive, ensuring that any issues or questions are addressed promptly.
+    </p>
+
+    <h2 style="color: var(--purple); margin-bottom: 1rem;">Conclusion</h2>
+    <p style="color: #ccc; line-height: 1.6; margin-bottom: 1.5rem;">
+      Overall, Vavada Casino offers an excellent gaming experience with a wide range of games, generous bonuses, and reliable customer support. Whether you're a seasoned player or new to online gambling, Vavada Casino is definitely worth checking out.
+    </p>
+  </section>
+
+  <!-- User Reviews Section -->
+  <section class="reviews-section">
+    <h2 class="reviews-title">User Reviews</h2>
+
+    <!-- Review Form -->
+    <div class="review-form" id="reviewForm">
+      <h3 style="color: var(--yellow); margin-bottom: 1rem;">Write a Review</h3>
+
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <select id="rating" class="rating-select">
+          <option value="">Select a rating</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="reviewText">Your Review</label>
+        <textarea id="reviewText" class="review-textarea" placeholder="Share your experience with Vavada Casino..."></textarea>
+      </div>
+
+      <button type="submit" id="submitReview" class="btn-submit-review">Submit Review</button>
+
+      <p id="loginToReview" class="login-message">Please <a href="#" class="btn--login" style="color: var(--red);">login</a> to submit a review</p>
+    </div>
+
+    <!-- Reviews List -->
+    <div class="reviews-container">
+      <h3 style="color: var(--yellow); margin-bottom: 1rem;">What Our Users Say</h3>
+      <div id="reviewsList" class="reviews-list">
+        <!-- Reviews will be loaded here -->
+        <div class="loading">Loading reviews...</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <nav class="footer__nav">
+    <a href="#">Contacts</a>
+    <a href="#">Rules</a>
+    <a href="#">FAQ</a>
+  </nav>
+  <div class="footer__payments">
+    <img src="./img/Visa_Inc._logo.svg.webp" alt="Visa" />
+    <img src="./img/Maestro_logo.png" alt="Maestro" />
+    <img src="./img/Skrill_logo.svg.png" alt="Skrill" />
+  </div>
+  <p class="footer__copyright">Copyright 2025 vavada.com</p>
+</footer>
+
+<script src="./js/app.js"></script>
+<script src="./js/reviews.js" type="module"></script>
+</body>
+</html>

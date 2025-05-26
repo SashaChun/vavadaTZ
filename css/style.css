@@ -529,10 +529,15 @@ body {
   color: transparent;
 }
 
+.form-group{
+  width: 90%;
+}
+
 .modal-body {
   padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 20px;
 }
 

@@ -9,6 +9,9 @@ import photo10 from '../img/games/Coin-Strike-Hold-and-Win-1-1.jpeg';
 import photo11 from '../img/games/images.jpg';
 import photo12 from '../img/games/gamePicDark.svg';
 
+// Import Firebase authentication
+import './firebase-auth';
+
 const games = [
   {
     name: 'Gates of Olympus',

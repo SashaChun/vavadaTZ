@@ -13,6 +13,9 @@
     "start": "webpack serve --open --config webpack.config.dev.js",
     "build": "webpack --config webpack.config.prod.js"
   },
+  "dependencies": {
+    "firebase": "^10.14.1"
+  },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "file-loader": "^6.2.0",
